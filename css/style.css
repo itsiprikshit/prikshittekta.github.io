@@ -1,3 +1,23 @@
+@font-face{  font-family:'Morris Roman';
+             src:url('../fonts/MorrisRomanBlack.ttf');
+}
+
+@font-face{  font-family:'Lithos Pro';
+             src:url('../fonts/LithosPro-Regular.otf');
+}
+
+@font-face{  font-family:Bakersfield;
+             src:url('../fonts/Bakersfield Light.ttf');
+}
+
+@font-face{  font-family:Calibri;
+             src:url('../fonts/CalibriL.ttf');
+}
+
+@font-face{  font-family:Candara;
+             src:url('../fonts/Candara.ttf');
+}
+
 *{
     margin:0;
     padding:0;
@@ -6,32 +26,105 @@
 body{
     width:100%;
     width:100%;
+    background:#e0e0e1;
+    overflow-x:hidden;
+    overflow-y:hidden;
 }
 
 #container{
     position:relative;
-    width:100%;
-    height:100%;
-    background:rgb(187, 222, 239);
+    width:1366px;
+    height:657px;
+    margin-left:auto;
+    margin-right:auto;
+    /*background:url('../images/prikshit.jpg');*/
 }
 
-#footer{
-    width:100%;
-    height:5%;
-    background:#232323;
-    position:fixed;
-    bottom:0;
-    text-align:center;
-    color:#0094ff;
-    font-family:Corbel;
-    box-shadow:0px -2px 8px rgba(0,0,0,1);
+.social{
+    position:absolute;
+    top:28px;
+    left:1220px;
+    list-style:none;
 }
 
-h1{
-    font-family:'Bank Gothic';
-    text-shadow:2px 2px 2px rgba(255,255,255,1);
+.social li{
+    padding:1px;
 }
 
-.text{
-    font-family:AUdimat;
+.social img{
+    opacity:.6;
+    transition:all .3s linear;
+}
+
+.social img:hover{
+    opacity:1;
+}
+
+.box{
+    position:relative;
+    height:110px;
+    width:350px;
+    background:#41bb93;
+    top:25px;
+    left:25px;
+    box-shadow:0px 10px 0px rgba(0,0,0,.2);
+    font-family:Calibri;
+}
+
+.quote{
+    position:absolute;
+    font-family:'Lithos Pro';
+    left:580px;
+    top:60px;
+    font-size:55px;
+}
+
+.hexagon{ 
+    width: 70px; 
+    height: 30px; 
+    background: #d24d57; 
+    position: absolute; 
+    left:1100px;
+    top:60px;
+} 
+
+.hexagon:before{ 
+    content: ""; 
+    position: absolute; 
+    top: -18px; 
+    left: 0; 
+    width: 0; 
+    height: 0; 
+    border-left: 35px solid transparent; 
+    border-right: 35px solid transparent; 
+    border-bottom: 18px solid #d24d57; 
+} 
+
+.hexagon:after{ 
+    content: ""; 
+    position: absolute; 
+    bottom: -18px; 
+    left: 0; 
+    width: 0; 
+    height: 0; 
+    border-left: 35px solid transparent; 
+    border-right: 35px solid transparent; 
+    border-top: 18px solid #d24d57; 
+}
+
+.line{
+    position: absolute;
+    border-right: 2px solid #d24d57;
+    top: 0;
+    bottom: 0;
+    height:100px;
+    left:1134px;
+}
+
+a:link{
+    color:#000;
+}
+
+a:visited{
+    color:#000;
 }
